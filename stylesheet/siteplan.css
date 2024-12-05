@@ -90,8 +90,6 @@ a:focus {
     outline: 2px dashed #F8BBD0;
     outline-offset: 4px;
 }
-
-/* Responsive Design */
 @media (max-width: 600px) {
     main {
         padding: 10px;
