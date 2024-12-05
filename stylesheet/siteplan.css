@@ -41,6 +41,13 @@ main h2 {
     padding-bottom: 5px;
 }
 
+
+/* Apply Open Sans for body text */
+body, p, ul, li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 /* Global Styles */
 body {
     font-family: 'Open Sans', sans-serif;
