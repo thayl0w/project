@@ -1,0 +1,118 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(120deg, #F8BBD0, #5E35B1);
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    color: white;
+    background-color: #5E35B1;
+    padding: 20px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-family: 'Lora', serif;
+    color: #5E35B1;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #F8BBD0;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(120deg, #F8BBD0, #5E35B1);
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    color: white;
+    background-color: #5E35B1;
+    padding: 20px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-family: 'Lora', serif;
+    color: #5E35B1;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #F8BBD0;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+/* Centering Images and Labels */
+.wireframe-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.wireframe-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.wireframe-label {
+    text-align: center;
+    font-size: 1em;
+    color: #5E35B1;
+    background-color: #F8BBD0;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+}
+
+footer {
+    background-color: #5E35B1;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
