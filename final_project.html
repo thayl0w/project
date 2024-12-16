@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BudgetBuddy - Budgeting Calculator to manage your finances.">
+    <title>BudgetBuddy - Budgeting Calculator</title>
+    <link rel="stylesheet" href="styles/budget-calculator.css">
+    <script src="scripts/budget-calculator.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BudgetBuddy</h1>
+            <nav>
+                <ul>
+                    <li><a href="budget-buddy.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="calculator-section">
+            <div class="calculator-container">
+                <div id="calculator">
+                    <h2>Budgeting Calculator</h2>
+                    <form id="budget-form">
+                        <label for="income-month">Month of Income:</label>
+                        <input type="month" id="income-month" required>
+
+                        <label for="income">Monthly Income:</label>
+                        <input type="number" id="income" placeholder="Enter your income" required>
+
+                        <label>Expense Types:</label>
+                        <div id="expenses-container">
+                            <div class="expense-item">
+                                <select class="expense-type">
+                                    <option value="Rent">Rent</option>
+                                    <option value="Groceries">Groceries</option>
+                                    <option value="Utilities">Utilities</option>
+                                    <option value="Transportation">Transportation</option>
+                                    <option value="Entertainment">Entertainment</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <input type="number" class="expense-amount" placeholder="Amount" required>
+                                <button type="button" class="remove-expense">Remove</button>
+                            </div>
+                        </div>
+
+                        <button type="button" id="add-expense">Add Another Expense</button>
+                        <button type="submit">Calculate Budget</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="summary-container">
+                <div id="result"></div>
+                <h3>Past Budget Summaries</h3>
+                <div id="past-budgets"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BudgetBuddy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
