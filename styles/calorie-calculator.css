@@ -1,0 +1,223 @@
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container for header */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background: #0078d7;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Main section styling */
+main {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+#calorie-calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.form-container, .calorie-summary-container {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container label {
+    font-weight: bold;
+}
+
+.form-container input, 
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #005fa3;
+}
+
+.calorie-summary-container h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.calorie-summary-container #calorie-result,
+.calorie-summary-container #calorie-insight,
+.calorie-summary-container #past-calories {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Adjust input and select sizes */
+#calorie-form input[type="number"],
+#calorie-form select {
+    width: 90%; /* Adjust width for proportional size */
+    max-width: 300px; /* Set a reasonable max-width */
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Align the form container neatly */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the result and past records */
+.calorie-summary-container {
+    margin-top: 20px;
+}
+
+#calorie-result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border: 1px solid #4caf50;
+    border-radius: 4px;
+}
+
+#past-calories .calorie-record {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#past-calories .remove-btn {
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#past-calories .remove-btn:hover {
+    background-color: #c9302c;
+}
+
+
+#calorie-insight {
+    border-left: 5px solid #0078d7;
+}
+
+#past-calories {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#past-calories div {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0078d7;
+    color: #fff;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #calorie-calculator {
+        width: 100%;
+    }
+
+    .form-container, 
+    .calorie-summary-container {
+        width: 100%;
+    }
+}
+

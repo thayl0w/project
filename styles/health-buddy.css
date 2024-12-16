@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+/* Container for header */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #0078d7;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #f4f4f9;
+    color: #0078d7;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#hero .cta {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background: #0078d7;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+#hero .cta:hover {
+    background: #005a9e;
+}
+
+/* Features Section */
+#features {
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+#features h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.feature-card {
+    background: #e8e8f1;
+    padding: 1rem;
+    border-radius: 8px;
+    flex-basis: 30%;
+    text-align: center;
+}
+
+/* Lazy Loading: Placeholder and Transition for Images */
+.feature-card img {
+    width: 100%;
+    height: auto;
+    background: url('placeholder-image.jpg') center center no-repeat; /* Set a placeholder background */
+    background-size: cover;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; /* Fade-in effect */
+    padding-top: 20px;
+}
+
+/* When the image is loaded, fade it in */
+.feature-card img.loaded {
+    opacity: 1;
+}
+
+.feature-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    margin-bottom: 1rem;
+}
+
+.feature-card .btn {
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+    padding: 0.7rem 1.5rem;
+    background: #0078d7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+}
+
+.feature-card .btn:hover {
+    background: #005a9e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0078d7;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #features .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,229 @@
+
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for header */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background: #0078d7;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main section styling */
+main {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+#calculator-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Budgeting Calculator */
+.calculator-container {
+    width: 45%;
+}
+
+#calculator {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#calculator h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #0078d7;
+    outline: none;
+}
+
+#expenses-container {
+    margin-bottom: 20px;
+}
+
+.expense-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+}
+
+.expense-item select {
+    flex: 2;
+}
+
+.expense-item input {
+    flex: 3;
+}
+
+button {
+    background-color: #0078d7;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Remove button for expenses */
+.remove-expense {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.remove-expense:hover {
+    background-color: #c0392b;
+}
+
+/* Budget Summary */
+.summary-container {
+    width: 45%;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    background-color: #eaf0f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#result h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#result p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #0078d7;
+    color: white;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #calculator-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .calculator-container,
+    .summary-container {
+        width: 100%;
+    }
+
+    .expense-item {
+        flex-direction: column; /* Stack the expense type and amount vertically */
+    }
+
+    .expense-item select {
+        width: 100%; /* Make select dropdown take full width */
+        margin-bottom: 10px;
+    }
+
+    .expense-item input {
+        width: 100%; /* Make input field take full width */
+    }
+}
