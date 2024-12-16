@@ -102,18 +102,17 @@ header nav ul li a {
     text-align: center;
 }
 
-/* Lazy Loading: Placeholder and Transition for Images */
+
 .feature-card img {
     width: 100%;
     height: auto;
-    background: url('placeholder-image.jpg') center center no-repeat; /* Set a placeholder background */
-    background-size: cover;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.5s ease-in-out; /* Fade-in effect */
+    background: url('placeholder-image.jpg') center center no-repeat; 
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
     padding-top: 20px;
 }
 
-/* When the image is loaded, fade it in */
+
 .feature-card img.loaded {
     opacity: 1;
 }
@@ -129,7 +128,7 @@ header nav ul li a {
 
 .feature-card .btn {
     display: block;
-    margin: 0 auto; /* Center the button horizontally */
+    margin: 0 auto;
     padding: 0.7rem 1.5rem;
     background: #0078d7;
     color: #fff;

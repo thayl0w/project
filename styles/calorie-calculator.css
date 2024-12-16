@@ -1,4 +1,4 @@
-/* General reset and box-sizing */
+
 * {
     margin: 0;
     padding: 0;
@@ -124,18 +124,18 @@ main {
     margin-bottom: 15px;
 }
 
-/* Adjust input and select sizes */
+
 #calorie-form input[type="number"],
 #calorie-form select {
-    width: 90%; /* Adjust width for proportional size */
-    max-width: 300px; /* Set a reasonable max-width */
+    width: 90%; 
+    max-width: 300px;
     padding: 8px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-/* Align the form container neatly */
+
 .form-container {
     max-width: 500px;
     margin: 0 auto;
@@ -145,7 +145,6 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Style the result and past records */
 .calorie-summary-container {
     margin-top: 20px;
 }

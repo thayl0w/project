@@ -1,5 +1,4 @@
 
-/* General reset and box-sizing */
 * {
     margin: 0;
     padding: 0;
@@ -215,15 +214,15 @@ footer p {
     }
 
     .expense-item {
-        flex-direction: column; /* Stack the expense type and amount vertically */
+        flex-direction: column; 
     }
 
     .expense-item select {
-        width: 100%; /* Make select dropdown take full width */
+        width: 100%; 
         margin-bottom: 10px;
     }
 
     .expense-item input {
-        width: 100%; /* Make input field take full width */
+        width: 100%;
     }
 }
